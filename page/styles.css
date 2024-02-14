@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    transition: all .3s;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: blue;
+    border-radius: 3px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Poppins';
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    padding: 0 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.082));
+}
+
+nav.white {
+    background: white !important;
+}
+
+nav.white .container-logo a {
+    color: black;
+}
+
+nav.white .auth-btn-container button.masuk {
+    border-color: black;
+    color: black;
+    background: transparent;
+}
+
+nav .container-logo {
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    min-width: 100px;
+    padding: 10px 50px;
+    color: white;
+}
+
+nav .container-logo a {
+    text-decoration: none;
+    color: white;
+}
+
+nav .nav-list {
+    position: relative;
+    list-style: none;
+    display: flex;
+    min-width: 450px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav .nav-list .list-item {
+    padding: 5px 10px;
+}
+
+nav .nav-list .list-item a {
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav .nav-list .list-item a:hover {
+    text-decoration: underline;
+}
+
+nav .nav-list .list-item a:active {
+    font-size: 1.1em;
+}
+
+nav .auth-btn-container {
+    position: relative;
+    width: max-content;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .auth-btn-container button {
+    padding: 5px 12px;
+    border: 2px solid blue;
+    margin: 5px 10px;
+    background-color: blue;
+    font-family: 'Poppins';
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+nav .auth-btn-container button:active {
+    transform: scale(1.1);
+}
+
+nav .auth-btn-container button.masuk {
+    background-color: rgba(0, 0, 0, 0.212);
+    font-weight: 500;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+.main .banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./../assets/image/banner-2.jpg');
+    background-size: cover;
+}
+
+
+
+
+
+/* =================== footer */
+footer {
+    position: relative;
+    width: 100%;
+    min-height: 200px;
+    background-color: rgb(226, 226, 226);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(31, 31, 31);
+    padding: 25px 30px;
+    color: white;
+    font-size: .8rem;
+}
