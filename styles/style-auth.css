@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    transition: all .3s;
+    font-family: 'Poppins';
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: blue;
+    border-radius: 3px;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Poppins';
+
+    background: url('./../assets/image/auth-back.jpg');
+    background-size: cover;
+}
+
+.auth-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-form {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: transparent !important;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-form .form-container {
+    position: relative;
+    padding: 25px;
+    padding-bottom: 0;
+
+    background-color: #FFF6E9;
+    border-radius: 10px;
+}
+
+.container-form .form-container .auth-title-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.container-form .form-container .auth-title-container h4 {
+    position: relative;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.container-form .form-container .auth-title-container a {
+    text-decoration: none;
+    color: gray;
+    font-size: .8rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.container-form .form-container form {
+    position: relative;
+    background-color: #FFF6E9;
+}
+
+.container-form .form-container .input-container {
+    position: relative;
+    margin: 30px 0;
+    width: 330px;
+    border-bottom: 2px solid #fff;
+}
+
+.input-container label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: .8em;
+    pointer-events: none;
+    font-size: .85rem;
+    color: gray;
+    background: white;
+    z-index: 99;
+    padding: 3px 5px;
+    border-radius: 3px;
+}
+
+.input-container label span svg {
+    width: 14px;
+    margin-right: 10px;
+    fill: gray;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    top: -3px;
+    font-size: .7rem;
+    color: black;
+}
+
+input:focus ~ label span svg,
+input:valid ~ label span svg {
+    width: 12px;
+    fill: black;
+}
+
+.input-container input {
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+    font-size: .9em;
+    padding: 0 35px 0 10px;
+}
+
+.form-container button {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 8px 5px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: .8rem;
+    background-color: #40A2E3;
+    margin-bottom: 20px;
+}
+
+.form-container .go-auth {
+    position: relative;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.form-container .go-auth p {
+    text-align: center;
+    font-size: .8rem;
+    margin: 0 auto;
+}
+
+.form-container .go-auth p a {
+    text-decoration: none;
+}
+
+.form-container .go-auth p a:hover {
+    text-decoration: underline;
+}
+
+.form-container .credit {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: .7rem;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding: 5px 0;
+    color: #2C3333;
+}
+
+.go-btn {
+    padding: 2px 5px;
+    background-color: #40A2E3;
+    border-radius: 3px;
+    color: white;
+    font-size: .7rem;
+}
