@@ -119,17 +119,29 @@
     margin-bottom: 3px;
     font-weight: 500;
     font-size: 1.3rem;
+    border-bottom: 2px solid black;
+    border-radius: 3px;
+    margin-bottom: 8px;
 }
 
 .room-item .room-content .room-price {
+    color: rgb(211, 0, 98);
+    font-weight: bold;
+    margin-bottom: 0;
+    font-size: 1.4rem;
+}
+
+.room-item .room-content .txt-price {
+    padding: 0;
+    margin: 0;
+    font-size: .7rem;
     color: gray;
     font-weight: bold;
-    margin-bottom: 5px;
-    font-size: .9rem;
 }
 
 .room-item .room-content .room-desc {
     font-size: .8rem;
+    margin-top: 10px;
 }
 
 .room-item .room-content a {

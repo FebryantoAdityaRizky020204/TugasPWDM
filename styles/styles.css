@@ -75,8 +75,8 @@ nav .container-logo a {
     color: white;
 }
 
-nav .container-logo a h1 {
-    font-size: 2em;
+nav .container-logo a h3 {
+    font-size: 1.4em;
     font-weight: bold;
     margin: 0;
 }
@@ -153,11 +153,58 @@ nav .auth-btn-container .auth-btn.masuk {
 }
 
 .main .banner {
+    position: relative;
     width: 100%;
     height: 100vh;
     background-image: url('./../assets/image/banner-2.jpg');
     background-size: cover;
     margin-bottom: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .banner .banner-content {
+    position: relative;
+    background-color: rgba(48, 48, 48, 0.815);
+    padding: 20px 30px;
+    border-radius: 2px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .banner h2 {
+    font-size: 3.5rem;
+    color: white;
+    text-shadow: 1px 1px 2px 1px black;
+}
+
+.main .banner p {
+    color: white;
+}
+
+
+.main .banner .star {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    width: 200px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color:  black;
+    overflow: hidden;
+}
+
+.main .banner .star img {
+    position: relative;
+    display: block;
+    width: 100%;
+    object-fit: cover;
 }
 
 .container {
@@ -211,13 +258,23 @@ nav .auth-btn-container .auth-btn.masuk {
 }
 
 .main .room-item .room-content .room-price {
+    color: rgb(211, 0, 98);
+    font-weight: bold;
+    margin-bottom: 0;
+    font-size: 1.4rem;
+}
+
+.main .room-item .room-content .txt-price {
+    padding: 0;
+    margin: 0;
+    font-size: .7rem;
     color: gray;
     font-weight: bold;
-    margin-bottom: 5px;
 }
 
 .main .room-item .room-content .room-desc {
-    font-size: .9rem;
+    font-size: .8rem;
+    margin-top: 10px;
 }
 
 .main .room-item .room-content a {
