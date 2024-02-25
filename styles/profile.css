@@ -1,0 +1,216 @@
+* {
+    font-family: 'Montserrat';
+}
+
+.p-room-header {
+    position: relative;
+    width: 100%;
+    padding: 25px 20px;
+    margin-top: 2rem;
+    border-radius: 10px;
+    background-color: salmon;
+
+    background: url('/assets/image/banner-1.jpg');
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.p-room-header h1 {
+    color: white;
+    font-weight: bold;
+}
+
+/* =================================== */
+
+/* ======================== */
+.profile-container {
+    position: sticky;
+    top: 10px;
+    margin-bottom: 50px;
+}
+
+.profile-container .profile-header {
+    position: relative;
+    border-radius: 10px;
+    background-color: white;
+    padding: 15px 25px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    box-shadow: 0 0 10px 2px rgba(128, 128, 128, 0.4);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+
+.profile-container .profile-header .profile-img {
+    position: relative;
+    width: 80%;
+    max-width: 200px;
+    overflow: hidden;
+
+    border-radius: 50%;
+    border: 2px solid rgba(122, 122, 122, 0.2);
+    box-shadow: 0 0 5px rgba(122, 122, 122, 0.3);
+    margin: 20px 0;
+}
+
+.profile-container .profile-header .profile-img img {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile-container .profile-header h4, h6 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.section {
+    position: relative;
+    border-radius: 10px;
+    background-color: white;
+    padding: 15px 25px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    box-shadow: 0 0 10px 2px rgba(128, 128, 128, 0.4);
+}
+
+.prof-btn {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+    margin: 0;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.prof-btn a {
+    position: relative;
+    text-decoration: none;
+    width: max-content;
+    border: 0;
+    width: 45%;
+    padding: 3px 0;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: .8rem;
+    text-align: center;
+}
+
+.home {
+    background-color: blue;
+    color: white;
+}
+
+.logout {
+    background-color: red;
+    color: white;
+}
+
+.section .form-container {
+    position: relative;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.section .form-container form {
+    position: relative;
+    width: 100%;
+    height: max-content;
+    display: block;
+}
+
+.input-container {
+    position: relative;
+    margin: 10px 0;
+    width: 100%;
+    border-bottom: 2px solid #fff;
+}
+
+.input-container label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: .8em;
+    pointer-events: none;
+    font-size: .85rem;
+    color: gray;
+    background: white;
+    z-index: 99;
+    padding: 3px 5px;
+    border-radius: 3px;
+}
+
+.input-container label span svg {
+    width: 14px;
+    margin-right: 10px;
+    fill: gray;
+}
+
+input:focus ~ label,
+input:valid ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label,
+select:focus ~ label,
+select:valid ~ label{
+    top: -3px;
+    font-size: .7rem;
+    color: black;
+}
+
+input:focus ~ label span svg,
+input:valid ~ label span svg,
+textarea:focus ~ label span svg,
+textarea:valid ~ label span svg,
+select:focus ~ label span svg,
+select:valid ~ label span svg {
+    width: 12px;
+    fill: black;
+}
+
+.input-container input,
+.input-container textarea,
+.input-container select {
+    width: 100%;
+    display: block;
+    min-height: 40px;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+    font-size: .9em;
+    padding: 0 10px;
+    font-weight: 500;
+}
+
+.input-container textarea {
+    padding-top: 10px;
+}
+
+.submit-btn {
+    position: relative;
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: blue;
+    font-weight: bold;
+    color: white;
+    margin: 10px 0;
+}
+

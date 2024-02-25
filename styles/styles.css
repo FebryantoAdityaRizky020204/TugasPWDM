@@ -23,7 +23,7 @@ body {
 }
 
 nav {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -91,7 +91,7 @@ nav .nav-list {
     list-style: none;
     font-family: 'Montserrat';
     margin: 0;
-
+    margin-right: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
