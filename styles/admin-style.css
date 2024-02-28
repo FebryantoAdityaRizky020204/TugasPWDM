@@ -296,6 +296,7 @@ input:valid ~ label span svg {
     outline: none;
     font-size: .9em;
     padding: 0 35px 0 10px;
+    text-transform: uppercase;
 }
 
 .form-container .checkin-btn {
