@@ -1,6 +1,13 @@
 * {
     box-sizing: border-box;
     font-family: 'Poppins';
+    transition: all .3s;
+}
+
+.row {
+    padding: 0;
+    margin: 0 !important;
+
 }
 
 ::-webkit-scrollbar {
@@ -80,14 +87,102 @@ body {
     height: calc(100vh - 50px);
 }
 
+.option-container a.goto-user {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    background-color: blue;
+    color: white;
+    width: 90%;
+    text-align: center;
+    padding: 5px 0;
+    font-size: .8rem;
+    font-weight: 500;
+    text-decoration: none;
+
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.option-container a.goto-user img {
+    position: relative;
+    display: block;
+    height: 16px;
+    object-fit: cover;
+    filter: brightness(0) invert(1);
+}
+
+.list {
+    position: relative;
+    list-style: none;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 !important;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list .list-item {
+    position: relative;
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+
+}
+
+.list .list-item a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 8px;
+    width: 100%;
+    font-size: .9rem;
+    color: black;
+}
+
+.list .list-item a:hover {
+    background-color: rgb(0, 204, 255);
+    border-radius: 4px;
+}
+
+.list .list-item a.active {
+    color: salmon;
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+}
+
+.list .list-item a img {
+    display: block;
+    width: 20px;
+    object-fit: cover;
+}
+
+.list .list-item a.active img {
+    filter: brightness(0) invert(1);
+}
+
 .content-container {
     position: fixed;
     top: 50px;
     bottom: 0;
     left: 250px;
+    right: 0;
     padding: 10px;
     overflow-y: scroll;
     overflow-x: hidden;
+    background-color: rgba(231, 231, 231, 0.2);
 }
 
 .content {
@@ -95,5 +190,224 @@ body {
     display: block;
     padding: 5px;
     height: max-content;
+}
+
+.content .content-title {
+    font-size: .8rem;
+    color: rgb(65, 65, 65);
+    font-weight: 600;
+    width: 100%;
     background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(155, 155, 155, 0.3);
+    box-shadow: 0 0 3px 1px rgba(155, 155, 155, 0.3);
+}
+
+.my-card {
+    border: 1px solid rgba(155, 155, 155, 0.3);
+    box-shadow: 0 0 3px 1px rgba(155, 155, 155, 0.3);
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.left {
+    position: sticky;
+    top: 10px;
+
+    display: block;
+    width: 100%;
+    height: max-content;
+}
+
+.content .checkin-card {
+    position: relative;
+    display: block;
+    height: max-content;
+    
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.checkin-card .checkin-title {
+    position: relative;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: rgb(116, 116, 116);
+    font-size: 1.1rem;
+}
+
+.form-container form {
+    position: relative;
+    background-color: #FFF6E9;
+}
+
+.form-container .input-container {
+    position: relative;
+    margin: 20px 0;
+    margin-bottom: 10px;
+    width: 100%;
+    border-bottom: 2px solid #fff;
+}
+
+.input-container label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: .8em;
+    pointer-events: none;
+    font-size: .85rem;
+    color: gray;
+    background: white;
+    z-index: 99;
+    padding: 3px 5px;
+    border-radius: 3px;
+}
+
+.input-container label span svg {
+    width: 14px;
+    margin-right: 10px;
+    fill: gray;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    top: -3px;
+    font-size: .7rem;
+    color: black;
+}
+
+input:focus ~ label span svg,
+input:valid ~ label span svg {
+    width: 12px;
+    fill: black;
+}
+
+.input-container input {
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+    font-size: .9em;
+    padding: 0 35px 0 10px;
+}
+
+.form-container .checkin-btn {
+    width: 100%;
+    display: block;
+    font-size: .8em;
+    padding: 5px 0;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.list-user-title {
+    position: relative;
+    font-weight: bold;
+    font-size: .9rem;
+    color: rgb(116, 116, 116);
+    margin-bottom: 20px;
+}
+
+.list-user-item {
+    position: relative;
+    padding: 5px 0;
+    /* border-top: 1px solid rgb(167, 167, 167); */
+    border-bottom: 1px solid rgb(167, 167, 167);
+    max-height: 60px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.list-user-item .li-1,
+.list-user-item .li-2 {
+    font-size: .9rem;
+    font-weight: bold;
+    height: max-content;
+    margin: auto 0;
+}
+
+.list-user-item .li-1 {
+    color: rgb(211, 0, 98);
+    position: relative;
+}
+
+.list-user-item .li-1 .room-number {
+    position: absolute;
+    bottom:50%;
+    transform: translateY(50%);
+    right: 15px;
+    border: 2px solid rgb(211, 0, 98);
+    padding: 5px;
+    border-radius: 4px;
+    font-size: .7rem;
+}
+
+.list-user-item .li-1 p,
+.list-user-item .li-2 p {
+    font-size: .6rem;
+    font-weight: 600;
+    color: black;
+    margin: 0;
+}
+
+.list-user-item .li-1 p span {
+    color: rgb(49, 28, 230);
+}
+
+.date-c {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.date {
+    position: relative;
+    background-color: rgba(43, 43, 43, 0.507);
+    width: max-content;
+    font-size: .7rem;
+    padding: 1px 3px;
+    margin: 2px 0;
+    font-weight: 500;
+    border-radius: 2px;
+    z-index: 10;
+}
+
+.date.start {
+    background-color: green;
+    color: white;
+}
+
+.date.end {
+    background-color: yellow;
+    color: black;
+}
+
+.divider {
+    position: relative;
+    width: 90px;
+    height: 30px !important;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: auto 0;
+}
+
+.divider p {
+    text-align: center;
+    font-size: .7rem;
+    font-weight: bold;
+    line-height: 28px;
+    color: black;
 }

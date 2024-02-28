@@ -83,12 +83,12 @@ body {
 }
 
 
-.container-form .form-container form {
+.form-container form {
     position: relative;
     background-color: #FFF6E9;
 }
 
-.container-form .form-container .input-container {
+.form-container .input-container {
     position: relative;
     margin: 30px 0;
     width: 330px;
