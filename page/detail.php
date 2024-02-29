@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPINETA | DETAIL</title>
-    <link rel="stylesheet" href="/styles/styles.css">
-    <link rel="stylesheet" href="/styles/detail.css">
+    <link rel="stylesheet" href="./../styles/styles.css">
+    <link rel="stylesheet" href="./../styles/detail.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./.../../assets/bootstrap/css/bootstrap.min.css">
 </head>
 <body>
     <nav class="nav pages">
         <div class="container-logo">
-            <a href="/page/index.html">
+            <a href="./index.php">
                 <h3>Spineta<span></span></h3>
             </a>
         </div>
@@ -22,20 +22,20 @@
 
             <ul class="nav-list">
                 <li class="list-item">
-                    <a href="/page/index.html">Home</a>
+                    <a href="./index.php">Home</a>
                 </li>
                 <li class="list-item">
-                    <a href="/page/room.html">Room</a>
+                    <a href="./room.php">Room</a>
                 </li>
                 <li class="list-item">
-                    <a href="/page/user/cek-pesanan.html">Cek Pesanan</a>
+                    <a href="./user/cek-pesanan.php">Cek Pesanan</a>
                 </li>
             </ul>
             
-            <a class="auth-btn masuk" href="/page/auth/login.html">MASUK</a>
-            <a class="auth-btn daftar" href="/page/auth/register.html">DAFTAR</a>
+            <a class="auth-btn masuk" href="./auth/login.php">MASUK</a>
+            <a class="auth-btn daftar" href="./auth/register.php">DAFTAR</a>
 
-            <a class="auth-btn" href="/page/user/profile.html">USER</a>
+            <a class="auth-btn" href="./user/profile.php">USER</a>
         </div>
     </nav>
 
@@ -50,7 +50,7 @@
                     <div class="col-md-3 p-1">
                         <div class="detail-room">
                             <div class="detail-imgcard">
-                                <img src="/assets/image/standard-room.jpg" alt="standard-room">
+                                <img src="./../assets/image/standard-room.jpg" alt="standard-room">
                             </div>
                             <div class="detail-desc">
                                 <p>20m<sup>2</sup></p>
@@ -60,7 +60,7 @@
                                 </p>
                             </div>
                         </div>
-                        <a class="back" href="./room.html"><< BACK TO ROOM</a>
+                        <a class="back" href="./room.php"><< BACK TO ROOM</a>
                     </div>
 
                     <div class="col-md-9">
@@ -79,19 +79,19 @@
                                             <ul>
                                                 <li>
                                                     <span>
-                                                        <img width="15px" src="/assets/icon/user-shape.png" alt="user">
+                                                        <img width="15px" src="./../assets/icon/user-shape.png" alt="user">
                                                     </span>
                                                     1 Tamu
                                                 </li>
                                                 <li>
                                                     <span>
-                                                        <img width="15px" src="/assets/icon/cutlery.png" alt="sarapan">
+                                                        <img width="15px" src="./../assets/icon/cutlery.png" alt="sarapan">
                                                     </span>
                                                     Sarapan Tidak Tersedia
                                                 </li>
                                                 <li>
                                                     <span>
-                                                        <img src="/assets/icon/bed.png" alt="bed" width="15px">
+                                                        <img src="./../assets/icon/bed.png" alt="bed" width="15px">
                                                     </span>
                                                     1 Single Bed
                                                 </li>
@@ -105,7 +105,7 @@
                                                 <div class="price-txt">
                                                     /kamar/malam
                                                 </div>
-                                                <a class="book-btn" href="./booking.html">BOOKING</a>
+                                                <a class="book-btn" href="./booking.php">BOOKING</a>
                                             </div>
                                         </div>
                                     </div>
@@ -125,19 +125,19 @@
                                             <ul>
                                                 <li>
                                                     <span>
-                                                        <img width="15px" src="/assets/icon/user-shape.png" alt="user">
+                                                        <img width="15px" src="./../assets/icon/user-shape.png" alt="user">
                                                     </span>
                                                     1 Tamu
                                                 </li>
                                                 <li>
                                                     <span>
-                                                        <img width="15px" src="/assets/icon/cutlery.png" alt="sarapan">
+                                                        <img width="15px" src="./../assets/icon/cutlery.png" alt="sarapan">
                                                     </span>
                                                     Sarapan Tersedia (1 pax)
                                                 </li>
                                                 <li>
                                                     <span>
-                                                        <img src="/assets/icon/bed.png" alt="bed" width="15px">
+                                                        <img src="./../assets/icon/bed.png" alt="bed" width="15px">
                                                     </span>
                                                     1 Single Bed
                                                 </li>
@@ -171,19 +171,19 @@
                                             <ul>
                                                 <li>
                                                     <span>
-                                                        <img width="15px" src="/assets/icon/user-shape.png" alt="user">
+                                                        <img width="15px" src="./../assets/icon/user-shape.png" alt="user">
                                                     </span>
                                                     2 Tamu
                                                 </li>
                                                 <li>
                                                     <span>
-                                                        <img width="15px" src="/assets/icon/cutlery.png" alt="sarapan">
+                                                        <img width="15px" src="./../assets/icon/cutlery.png" alt="sarapan">
                                                     </span>
                                                     Sarapan Tidak Tersedia
                                                 </li>
                                                 <li>
                                                     <span>
-                                                        <img src="/assets/icon/bed.png" alt="bed" width="15px">
+                                                        <img src="./../assets/icon/bed.png" alt="bed" width="15px">
                                                     </span>
                                                     2 Single Bed
                                                 </li>
@@ -217,19 +217,19 @@
                                             <ul>
                                                 <li>
                                                     <span>
-                                                        <img width="15px" src="/assets/icon/user-shape.png" alt="user">
+                                                        <img width="15px" src="./../assets/icon/user-shape.png" alt="user">
                                                     </span>
                                                     2 Tamu
                                                 </li>
                                                 <li>
                                                     <span>
-                                                        <img width="15px" src="/assets/icon/cutlery.png" alt="sarapan">
+                                                        <img width="15px" src="./../assets/icon/cutlery.png" alt="sarapan">
                                                     </span>
                                                     Sarapan Tersedia (2 pax)
                                                 </li>
                                                 <li>
                                                     <span>
-                                                        <img src="/assets/icon/bed.png" alt="bed" width="15px">
+                                                        <img src="./../assets/icon/bed.png" alt="bed" width="15px">
                                                     </span>
                                                     2 Single Bed
                                                 </li>
@@ -292,7 +292,7 @@
     </footer>
 
     
-    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./../assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!-- <script>
         let nav = document.querySelector('nav');

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PWDM | LOGIN</title>
-    <link rel="stylesheet" href="/styles/style-auth.css">
+    <link rel="stylesheet" href="./../styles/style-auth.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
@@ -13,8 +13,8 @@
         <div class="container-form">
             <div class="form-container">
                 <div class="auth-title-container">
-                    <h4 class="auth-title">LOG IN</h4>
-                    <a href="/page/index.html">- TheHotel -</a>
+                    <h4 class="auth-title">LOG IN ADMIN</h4>
+                    <a href="./../page/index.php">- TheHotel -</a>
                 </div>
                 <form action="#" method="post">
                     <div class="input-container">
@@ -38,23 +38,15 @@
 
                     <div class="row cont-auth-btn">
                         <button class="auth-btn" type="submit" value="submit">LOG IN</button>
-                        <a class="auth-btn home" href="/page/index.html">HOME</a>
                     </div>
                 </form>
-                <div class="go-auth">
-                    <p>Belum Punya Akun??
-                        <a class="go-btn" href="./register.html">REGISTER</a>
-                        Sekarang
-                    </p>
-                </div>
                 <div class="credit">
                     © 2012-2024 TheHotel Management. All Rights Reserved.
                 </div>
             </div>
 
-            <video src="/assets/video/video-2.mp4" autoplay muted loop id="myVideo">
+            <video src="./../assets/video/video-2.mp4" autoplay muted loop id="myVideo">
             </video>
-            <a class="video-credit" href="https://www.vecteezy.com/free-videos/ocean">Ocean Stock Videos by Vecteezy</a>
         </div>
     </div>
 

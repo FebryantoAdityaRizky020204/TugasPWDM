@@ -1,10 +1,14 @@
+<?php 
+    if(!isset($_SESSION['login_admin'])) header('Location: ./login.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADMIN | DASHBOARD</title>
-    <link rel="stylesheet" href="/styles/admin-style.css">
+    <link rel="stylesheet" href="./../styles/admin-style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
 </head>
@@ -21,29 +25,29 @@
                 <ul class="list">
                     <li class="list-item">
                         <a class="active" href="javascript:void(0)">
-                            <img src="/assets/icon/dashboard.png" alt="dashboard"> Dashboard
+                            <img src="./../assets/icon/dashboard.png" alt="dashboard"> Dashboard
                         </a>
                     </li>
                     <li class="list-item">
                         <a href="javascript:void(0)">
-                            <img src="/assets/icon/kategori.png" alt="kategori"> Kategori
+                            <img src="./../assets/icon/kategori.png" alt="kategori"> Kategori
                         </a>
                     </li>
                     <li class="list-item">
                         <a href="javascript:void(0)">
-                            <img src="/assets/icon/room.png" alt="room"> Room
+                            <img src="./../assets/icon/room.png" alt="room"> Room
                         </a>
                     </li>
                     <li class="list-item">
                         <a href="javascript:void(0)">
-                            <img src="/assets/icon/avatar.png" alt="avatar"> User
+                            <img src="./../assets/icon/avatar.png" alt="avatar"> User
                         </a>
                     </li>
                 </ul>
 
-                <a href="/page/index.html" class="goto-user" target="_blank">
+                <a href="/page/index.php" class="goto-user" target="_blank">
                     USER PAGE
-                    <img src="/assets/icon/redirect-right.png" alt="redirect">
+                    <img src="./../assets/icon/redirect-right.png" alt="redirect">
                 </a>
             </div>
             <div class="content-container">
@@ -676,7 +680,7 @@
     
 
 
-    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./../assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
