@@ -10,7 +10,7 @@
     border-radius: 10px;
     background-color: salmon;
 
-    background: url('/assets/image/banner-1.jpg');
+    background: url('./../assets/image/banner-1.jpg');
     background-position: center;
     background-size: cover;
     color: white;

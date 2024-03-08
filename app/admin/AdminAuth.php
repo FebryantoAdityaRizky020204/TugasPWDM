@@ -1,6 +1,4 @@
 <?php
-    require_once './../connection.php';
-
     class AdminAuth {
         public $db;
 
@@ -8,15 +6,15 @@
             $this->db = new Connection();
         }
 
-        // untuk admin registrasi
-        public function registrasi() {
-            $nama_admin = $_POST['namaAdmin'];
-            $username_admin = $_POST['username_admin'];
-            $password_admin = $_POST['password_admin'];
-            $role = 'admin';
+        // untuk menambah admin
+        public function registrasi($post) {
+            $nama_admin = $post['namaAdmin'];
+            $username_admin = $post['username_admin'];
+            $password_admin = $post['password_admin'];
+            $role = $post['role'];
             $data = [];
 
-            if(!empty($nama_admin) AND !empty($username_admin) AND !empty($password_admin)) {
+            if(!empty($nama_admin) AND !empty($username_admin) AND !empty($password_admin) && !empty($role)) {
                 $password_admin = $this->openSSL($password_admin);
 
                 $query = "INSERT INTO `tb_admin`(`id_admin`, `nama_admin`, `username`, `password`, `role`) 
@@ -36,16 +34,16 @@
             }
 
             return $data;
-        }   
+        }
 
         // untuk admin login
-        public function login() {
-            $username = $_POST['username'];
-            $password = $_POST['password'];
+        public function login($data) {
+            $username = $data['username'];
+            $password = $data['password'];
 
             $data = [];
 
-            if(!empty($username) AND !empty(!$password)) {
+            if(!empty($username) AND !empty($password)) {
                 $mybeUser = $this->db->singleFetch("SELECT * FROM `tb_admin` WHERE `username` = '$username'");
 
                 $mybePasswordUSer = $this->openSSL($password);
@@ -66,6 +64,12 @@
             }
 
             return $data;
+        }
+
+        public function logout() {
+            session_destroy();
+            session_reset();
+            $_SESSION = '';
         }
 
 

@@ -1,6 +1,7 @@
 <?php 
     if(!isset($_SESSION)) session_start();
     if(!isset($_SESSION['login_admin'])) header('Location: ./login.php');
+    $dataAdmin = $_SESSION['data_admin'];
 ?>
 
 <!DOCTYPE html>
@@ -35,7 +36,7 @@
             <div class="option-container">
                 <ul class="list">
                     <li class="list-item">
-                        <a class="active" href="javascript:void(0)">
+                        <a href="./index.php">
                             <img src="./../assets/icon/dashboard.png" alt="dashboard"> Dashboard
                         </a>
                     </li>
@@ -60,7 +61,7 @@
 
                 <ul class="list">
                     <li class="list-item">
-                        <a href="./profile.php">
+                        <a href="./profile.php" class="active" >
                             <i class="fa-solid fa-user-tie"> </i> Admin Profile
                         </a>
                     </li>
@@ -77,65 +78,42 @@
             <div class="content-container">
                 <div class="content">
                     <div class="content-title">
-                        DASHBOARD | SPINETA HOTEL
+                        PROFILE | SPINETA HOTEL
                     </div>
 
                     <div class="col-12">
                         <div class="row justify-content-between">
                             <div class="col-md-5 left">
                                 <div class="checkin-card my-card">
-                                    <div class="checkin-title">
-                                        CHECK-IN
+                                    <div class="role">
+                                        <span>ROLE</span> <?= $dataAdmin['role'] ?>
                                     </div>
-                                    <div class="form-container">
-                                        <form action="0" method="post">
-                                            <div class="input-container">
-                                                <input type="text" name="no_registrasi" id="no_registrasi" required>
-                                                <label for="no_registrasi">
-                                                    NO. REGISTRASI
-                                                </label>
-                                            </div>
-                                            <button type="submit" value="submit" class="form-btn">CARI</button>
-                                        </form>
-                                    </div>
+                                    <form class="form-container">
+                                        <div class="input-container">
+                                            <input type="text" name="nama_lengkap" id="nama_lengkap" required autocomplete="off" value="<?= $dataAdmin['nama_admin'] ?>">
+                                            <label for="nama_lengkap">
+                                                Nama Lengkap
+                                            </label>
+                                        </div>
+                                        <div class="input-container">
+                                            <input type="text" name="username_admin" id="username_admin" required autocomplete="off" value="<?= $dataAdmin['username'] ?>">
+                                            <label for="username_admin">
+                                                Username
+                                            </label>
+                                        </div>
+                                        <div class="input-container">
+                                            <input type="text" name="password_admin" id="password_admin" required autocomplete="off">
+                                            <label for="password_admin">
+                                                Password Admin
+                                            </label>
+                                        </div>
+                                        <button type="submit" name="tambahRoom" class="form-btn edit">SIMPAN PERUBAHAN</button>
+                                    </form>
                                 </div>
                             </div>
                             <div class="col-md-7">
                                 <div class="my-card">
-                                    <div class="list-user-title">
-                                        PELANGGAN MENGINAP
-                                    </div>
-                                    <div class="list-user">
-
-                                        <div class="list-user-item">
-                                            <div class="col-4 li-1">
-                                                SSB298367 <br />
-                                                <p>
-                                                    Standard Single Bed <br />
-                                                    <span class="addon"></span>
-                                                </p>
-                                                <div class="room-number">
-                                                    20
-                                                </div>
-                                            </div>
-                                            <div class="col-4 li-2">
-                                                John Doe <br />
-                                                <p>6850495849584730</p>
-                                            </div>
-                                            <div class="col-4 date-c">
-                                                <div class="start date">
-                                                    25-02-2024
-                                                </div>
-                                                <div class="end date">
-                                                    28-02-2024
-                                                </div>
-                                                <div class="divider">
-                                                    <p>3 Malam</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>

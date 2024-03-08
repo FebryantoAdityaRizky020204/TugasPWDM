@@ -1,4 +1,5 @@
 <?php
+    CONST __LOCAL__ = 'http://localhost/tugaspwdm/';
 
     if(!isset($_SESSION)) session_start();
     class Connection {
@@ -37,9 +38,9 @@
 
         // fungsi untuk mengambil banyak data
         public function fetchAll($query){
-            $data = NULL;
+            $data = [];
             if ($sql = $this->conn->query($query)) {
-				while ($row = mysqli_fetch_row($sql)) {
+				while ($row = mysqli_fetch_assoc($sql)) {
                     $data[] = $row;
 				}
 			}
