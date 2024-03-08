@@ -216,14 +216,26 @@
                                                         No Kamar : <?= $k['no_kamar_start'] ?> - <?= $k['no_kamar_end'] ?>
                                                     </span>
                                                 </div>
-                                                <div class="col-12 mid-box-hotel">
-                                                    <div class="col-9">
-                                                        <p class="nama-hotel">
-                                                            <?= $tipeKamar['tipe_kamar'] ?> <?= $k['nama_kamar'] ?>
-                                                        </p>
-                                                        <p class="alamat-hotel price">
-                                                            IDR <?= number_format($k['harga_kamar'], 2, ",", ".") ?>
-                                                        </p>
+                                                <div class="row">
+                                                    <div class="col-8 mid-box-hotel p-0">
+                                                        <div class="col-9">
+                                                            <p class="nama-hotel">
+                                                                <?= $tipeKamar['tipe_kamar'] ?> <?= $k['nama_kamar'] ?>
+                                                            </p>
+                                                            <p class="alamat-hotel price">
+                                                                IDR <?= number_format($k['harga_kamar'], 2, ",", ".") ?>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4 list-item-hotel">
+                                                        <ul>
+                                                            <li>
+                                                                <i class="fa fa-user" aria-hidden="true"></i> <?= $k['jumlah_tamu'] ?> Tamu
+                                                            </li>
+                                                            <li>
+                                                                <i class="fa fa-bed" aria-hidden="true"></i> <?= $k['jumlah_bed'] ?> Single Bed
+                                                            </li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                                 <div class="col-12 box-hotel-btn-container kategori">

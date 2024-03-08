@@ -12,8 +12,8 @@
                             <li class="scroll"><a href="./index.php">Home</a></li>
                             <li class="scroll"><a href="./room.php">Room</a></li>
                             <li class="scroll"><a href="./user/cek-pesanan.php">Cek Pesanan</a>
-                            <li class="scroll"><a href="">Be Our Partner</a></li>
-                            <li class="scroll"><a href="">Admin Login</a></li>
+                            <li class="scroll"><a href="./../admin/beOurMember.php">Be Our Partner</a></li>
+                            <li class="scroll"><a href="./../admin/login.php">Admin Login</a></li>
                         </ul>
                     </div>
                 </div>

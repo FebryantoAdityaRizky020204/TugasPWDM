@@ -726,6 +726,7 @@ select:valid ~ label span svg {
 .mid-box-hotel .alamat-hotel.price {
     font-size: 1rem;
     font-weight: bold;
+    color: crimson;
 }
 
 .box-hotel-btn-container {
@@ -826,5 +827,25 @@ select:valid ~ label span svg {
 }
 
 .txt-black {
-    color: black !important;
+    color: #8a8a8a !important;
+    font-size: .8rem;
+}
+
+.list-item-hotel ul {
+    list-style: none;
+    padding: 2px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.list-item-hotel ul li {
+    font-size: .8rem;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    font-weight: 500;
 }
